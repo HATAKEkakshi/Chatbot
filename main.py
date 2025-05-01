@@ -6,12 +6,12 @@ from langchain_groq import ChatGroq
 
 ##streamlit ui
 st.set_page_config(page_title="Jarvis")
-st.header("Jarvis , The Conversational Chatbot")
+st.header("Chill , The Conversational Chatbot")
 groq_api_key="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"
 from dotenv import load_dotenv # type: ignore
 load_dotenv()
 import os
-chat=ChatGroq(model="llama-3.3-70b-specdec",groq_api_key=groq_api_key)
+chat=ChatGroq(model="llama-3.3-70b-versatile",groq_api_key=groq_api_key)
 if 'flowmessage' not in st.session_state:
     st.session_state['flowmessage']=[
         SystemMessage(content="You are Girl matter expert it means all health related query regarding girls healht ")

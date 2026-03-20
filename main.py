@@ -1,6 +1,6 @@
 ##conversional  q&a chatbot
 import streamlit as st
-from langchain.schema import HumanMessage,SystemMessage,AIMessage
+from langchain.messages import HumanMessage,SystemMessage,AIMessage
 from langchain_community.chat_models import ChatOpenAI
 from langchain_groq import ChatGroq
 

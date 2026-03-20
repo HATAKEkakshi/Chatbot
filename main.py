@@ -1,6 +1,6 @@
 ## Conversational Q&A Chatbot
 import streamlit as st
-from langchain.schema import HumanMessage, SystemMessage, AIMessage
+from langchain.messages import HumanMessage, SystemMessage, AIMessage
 from langchain_groq import ChatGroq
 from dotenv import load_dotenv
 import os
